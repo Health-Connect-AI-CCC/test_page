@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>강북삼성병원 AI밀착케어 헬스리포트</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <!-- customer_id, crm_message, schedule이 넘어오는 데이터 -->
     <div id="mobile-container">
         <!--표지 섹션-->
         <section id="cover">
-            <img class="kbsmc_logo" src="images/kangbukhospital_logo.png" />
+            <img class="kbsmc_logo" src="../images/base/kangbukhospital_logo.png" />
             <div class="subtitle">
                 삼성화재 통합암케어 고객대상<br/>AI 밀착케어 헬스리포트
             </div>
@@ -19,18 +20,18 @@
             </div>
             <div class= "title">
                 <span class="title_line_spacing"><br/></span>
-                <span class="title_name">김삼성 고객님의</span>
+                <span class="title_name">박성민 고객님의</span>
                 <span class="title_spare">건강 안내서</span>
             </div>
-            <img class="report_icon" src="images/report_icon.png" />
+            <img class="report_icon" src="../images/base/report_icon.png" />
         </section>
         <!-- 인사말 및 주의 소견 이미지 섹션-->
         <section id="greeting">
             <div class="background"></div>
-            <img class="doctor_icon" src="images/doctor_icon.png" />
+            <img class="doctor_icon" src="../images/base/doctor_icon.png" />
             <div class="greeting_textbox">
                 <span class="hello">
-                    김삼성 고객님, 안녕하십니까?<br/>
+                    박성민 고객님, 안녕하십니까?<br/>
                 </span>
                 <span class="hello2">
                     강북삼성병원 건강검진센터입니다.
@@ -48,123 +49,200 @@
             <div class="caution_background"></div>
             <div class="caution_textbox">
                 <span>
-                    김삼성 고객님이&nbsp;
+                    박성민 고객님이&nbsp;
                 </span>
                 <span>
-                    각별히 주의해야 하는 소견
+                    주의하셔야 하는 소견
                 </span>
             </div>
             <div class="caution_list">
+                
                 <div class="caution_list_item">
                     <div class="caution_card">
-                        <img class="caution_icon" src="images/icon_brain.png" alt="뇌 아이콘" />
-                        <div class="caution_status warning">경고</div>
-                        <div class="caution_title">뇌병변 의심</div>
+                        <img class="caution_icon" src="../images/indicator/혈관.png" alt="뇌 아이콘" />
+                        <div class="caution_status
+                            warning
+                            
+                        ">위험</div>
+                        <div class="caution_title">LDL 콜레스테롤</div>
                     </div>
                 </div>
+                
                 <div class="caution_list_item">
                     <div class="caution_card">
-                        <img class="caution_icon" src="images/icon_artery.png" alt="동맥 아이콘" />
-                        <div class="caution_status warning">경고</div>
-                        <div class="caution_title">동맥경화/고지혈</div>
+                        <img class="caution_icon" src="../images/indicator/혈관.png" alt="뇌 아이콘" />
+                        <div class="caution_status
+                            alert
+                            
+                        ">경계</div>
+                        <div class="caution_title">식전혈당</div>
                     </div>
                 </div>
+                
                 <div class="caution_list_item">
                     <div class="caution_card">
-                        <img class="caution_icon" src="images/icon_liver.png" alt="간 아이콘" />
-                        <div class="caution_status caution">주의</div>
-                        <div class="caution_title">간 건강(지방간)</div>
+                        <img class="caution_icon" src="../images/indicator/영양.png" alt="뇌 아이콘" />
+                        <div class="caution_status
+                            caution
+                            
+                        ">주의</div>
+                        <div class="caution_title">체질량지수</div>
                     </div>
                 </div>
+                
                 <div class="caution_list_item">
                     <div class="caution_card">
-                        <img class="caution_icon" src="images/icon_stomach.png" alt="위 아이콘" />
-                        <div class="caution_status caution">주의</div>
-                        <div class="caution_title">위/식도 건강</div>
+                        <img class="caution_icon" src="../images/indicator/영양.png" alt="뇌 아이콘" />
+                        <div class="caution_status
+                            caution
+                            
+                        ">주의</div>
+                        <div class="caution_title">비타민D</div>
                     </div>
                 </div>
+                
                 <div class="caution_list_item">
                     <div class="caution_card">
-                        <img class="caution_icon" src="images/icon_wbc.png" alt="백혈구 아이콘" />
-                        <div class="caution_status caution">주의</div>
-                        <div class="caution_title">백혈구 수치</div>
+                        <img class="caution_icon" src="../images/indicator/심장.png" alt="뇌 아이콘" />
+                        <div class="caution_status
+                            alert
+                            
+                        ">경계</div>
+                        <div class="caution_title">심박수</div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <!-- 주요 지표 및 생활습관 설명 섹션-->
         <section id="analysis_description">
             <div class="main_description">
-                <span>
-                이번 검진 결과, 고객님의 건강 상태에서 <br/>
-                가장 먼저 확인하고 조치하셔야 할 부분은<br/>
-                </span>
-                <span>
-                    뇌 CT에서 발견된 후두엽 병변입니다.<br/><br/>
-                </span>
-                <span>
-                    이는 반드시 전문의의 정밀한 진단이 필요한 소견입니다.<br/><br/>
-                    이와 함께<br/>
-                </span>
-                <span>
-                    혈압, 콜레스테롤, 동맥 경직도
-                </span>
-                <span>
-                    등 여러 혈관 건강 지표들이<br/>
-                    동시에 경고 신호를 보내고 있습니다.<br/><br/>
-                    이는 과체중, 지방간과 맞물려 '대사증후군'으로 향하는 <br/>
-                    갈림길에 서 있다는 의미이며<br/>
-                </span>
-                <span>
-                    심뇌혈관 질환의 위험이 커지고 있음을 시사합니다.
-                </span>
+                <div class="indicator_detail_concept_text">혈중 콜레스테롤과 공복 혈당 수치가 경고 수준에 도달했고, 비만이 동반되어 있어 대사증후군으로의 진행이 강력히 의심됩니다.<br /><br />이는 향후 당뇨병, 심근경색, 뇌졸중 등 중증 심뇌혈관질환 발생 위험을 크게 높이는 상태이므로, 반드시 내과(가정의학과) 진료를 통해 정확한 상태 평가와 관리 계획을 세우셔야 합니다.<br /><br />특히 '나쁜' LDL 콜레스테롤(149mg/dL)과 총콜레스테롤(214mg/dL)이 정상 범위를 초과했고, 식전혈당(102mg/dL)은 당뇨병 전단계에 해당합니다.<br /><br />높은 체질량지수(25.7kg/㎡)와 스트레스 지수는 이러한 상태를 더욱 악화시킬 수 있습니다.<br /><br />현재 고객님의 건강 상태는 혈관과 혈당에 동시에 적신호가 켜진 상황이며, 그 바탕에는 체중 문제가 자리하고 있습니다.<br /><br />하지만 지금은 심각한 질병을 예방할 수 있는 매우 중요한 '골든타임'이므로, 전문의의 도움과 함께 생활습관을 적극적으로 교정한다면 충분히 건강을 회복하실 수 있습니다.<br /><br />
+                </div>
             </div>
             <div class="indicators_container">
                 <hr style="width: 365.5px; height: 1px; background: #D7CECE; border: none;">
-                <!-- Indicator 1: 간 건강(지방간) -->
+                
+                <!-- Indicator: LDL 콜레스테롤 -->
                 <div class="indicator">
                     <div class="indicator_summary">
-                        <img src="images/icon_liver.png" />
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <div class="indicator_status_warning caution">
-                                <div class="indicator_status_warning_text">주의</div>
+                        <img src="../images/indicator/혈관.png" />
+                        <div class="indicator_summary_content">
+                            <div class="indicator_status_warning
+                                warning
+                                
+                            ">
+                                <div class="indicator_status_warning_text">위험</div>
                             </div>
-                            <div class="indicator_name">간 건강(지방간)</div>
+                            <div class="indicator_name">
+                                LDL 콜레스테롤
+                            </div>
                         </div>
                     </div>
                     <div class="indicator_detail">
-                        <div class="indicator_detail_concept_text">
-                            간은 우리 몸의 화학 공장으로, 영양소를 처리하고 독소를 해독하는 중요한 역할을 합니다.<br/><br/> 지방간은 이러한 간에 지방이 과도하게 축적된 상태로 간 기능 저하의 첫 단계에 해당합니다.<br/><br/> 방치할 경우 간염, 간경변 등 심각한 간 질환으로 진행될 수 있으므로 초기에 관리하는 것이 중요합니다.
+                        <div class="indicator_detail_concept_text">LDL 콜레스테롤은 혈관 벽에 쌓여 혈관을 좁고 딱딱하게 만드는 '나쁜 콜레스테롤'입니다.<br /><br />우리 몸의 혈관을 깨끗한 수도관에 비유한다면, LDL 콜레스테롤은 관 안에 끼는 기름때와 같아서 혈액의 흐름을 방해합니다.<br /><br />이 수치가 높으면 동맥경화, 심근경색, 뇌졸중 등 치명적인 심뇌혈관질환의 위험이 커지므로 꾸준한 관리가 매우 중요합니다.
                         </div>
-                        <div class="indicator_detail_status_text">
-                            고객님께서는 경증 지방간 소견을 받으셨습니다.<br/><br/> 이는 다행히 아직 심각한 단계는 아니며, 생활습관 개선만으로도 충분히 정상으로 되돌릴 수 있다는 긍정적인 신호이기도 합니다.<br/><br/>  
-                            과체중, 고지혈증과도 직접적인 연관이 있으므로 식습관 개선과 운동을 통해 간에 쌓인 지방을 걷어내는 노력이 필요합니다.
+                        <div class="indicator_detail_status_text">고객님의 LDL 콜레스테롤 수치는 149mg/dL로, 정상 기준인 130mg/dL 미만을 초과한 '높음' 상태입니다.<br /><br />혈관 건강에 적신호가 켜졌다는 의미이므로, 식단 조절과 운동을 통해 적극적으로 수치를 낮추는 노력이 필요합니다.
                         </div>
                     </div>
                 </div>
-                <!-- Indicator 2: 위염/역류성 식도염 -->
+                
+                <!-- Indicator: 식전혈당 -->
                 <div class="indicator">
                     <div class="indicator_summary">
-                        <img src="images/icon_stomach.png" />
-                        <div style="display: flex; align-items: center; justify-content: center;">
-                            <div class="indicator_status_warning caution">
-                                <div class="indicator_status_warning_text">주의</div>
+                        <img src="../images/indicator/혈관.png" />
+                        <div class="indicator_summary_content">
+                            <div class="indicator_status_warning
+                                alert
+                                
+                            ">
+                                <div class="indicator_status_warning_text">경계</div>
                             </div>
-                            <div class="indicator_name">위염/역류성 식도염</div>
+                            <div class="indicator_name">
+                                식전혈당
+                            </div>
                         </div>
                     </div>
                     <div class="indicator_detail">
-                        <div class="indicator_detail_concept_text">
-                            만성 위염은 위의 보호막(위점막)이 지속적인 자극으로 약해져 염증이 생긴 상태이며, 역류성 식도염은 위의 내용물, 특히 위산이 식도로 역류하여 식도에 염증을 일으키는 질환입니다.<br/><br/>
-                            두 질환 모두 속쓰림, 소화불량 등을 유발하며, 잘못된 식습관이 주된 원인으로 꼽힙니다.
+                        <div class="indicator_detail_concept_text">식전혈당은 8시간 이상 금식 후 측정한 혈액 속 포도당 농도로, 당뇨병을 진단하는 가장 기본적인 지표입니다.<br /><br />혈당은 우리 몸의 주 에너지원이지만, 너무 높으면 혈액을 끈적이게 만들어 온몸의 혈관과 신경에 손상을 줄 수 있습니다.<br /><br />따라서 이 수치를 통해 당뇨병의 위험을 미리 발견하고 예방하는 것이 중요합니다.
                         </div>
-                        <div class="indicator_detail_status_text">
-                            위내시경 검사 결과, 위염과 함께 미세한 역류성 식도염 소견이 관찰되었습니다.<br/><br/> 
-                            이는 고객님의 소화기관이 현재 식습관이나 생활 패턴에 힘겨워하고 있다는 증거입니다.<br/><br/>
-                            증상이 심하지 않더라도 위와 식도에 가해지는 부담을 줄여주기 위한 생활습관 교정이 필요합니다.
+                        <div class="indicator_detail_status_text">고객님의 식전혈당 수치는 102mg/dL로, 정상(100mg/dL 미만)과 당뇨병 진단 기준(126mg/dL 이상) 사이인 '공복혈당장애', 즉 당뇨병 전단계에 해당합니다.<br /><br />지금 관리하지 않으면 당뇨병으로 진행될 위험이 높으므로, 즉각적인 생활습관 개선이 필요합니다.
                         </div>
                     </div>
                 </div>
+                
+                <!-- Indicator: 체질량지수(BMI) -->
+                <div class="indicator">
+                    <div class="indicator_summary">
+                        <img src="../images/indicator/영양.png" />
+                        <div class="indicator_summary_content">
+                            <div class="indicator_status_warning
+                                caution
+                                
+                            ">
+                                <div class="indicator_status_warning_text">주의</div>
+                            </div>
+                            <div class="indicator_name">
+                                체질량지수
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicator_detail">
+                        <div class="indicator_detail_concept_text">체질량지수(BMI)는 키와 체중을 이용해 지방의 양을 추정하는 비만도 측정 지표입니다.<br /><br />단순히 몸무게가 많이 나가는 것보다, 우리 몸에서 지방이 차지하는 비율이 높은 것이 건강에 더 해로울 수 있습니다.<br /><br />과도한 체지방은 고혈압, 당뇨, 고지혈증 등 각종 만성질환의 근본 원인이 되기 때문에 적정 수준을 유지하는 것이 핵심입니다.
+                        </div>
+                        <div class="indicator_detail_status_text">고객님의 체질량지수는 25.7kg/㎡로, 아시아태평양 기준 25kg/㎡ 이상인 '1단계 비만'에 해당합니다.<br /><br />특히 내장지방 수치도 9레벨로 경계 범위에 있어, 현재의 체중이 앞서 설명드린 콜레스테롤 및 혈당 문제와 깊은 관련이 있음을 시사합니다.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicator: 비타민D -->
+                <div class="indicator">
+                    <div class="indicator_summary">
+                        <img src="../images/indicator/영양.png" />
+                        <div class="indicator_summary_content">
+                            <div class="indicator_status_warning
+                                caution
+                                
+                            ">
+                                <div class="indicator_status_warning_text">주의</div>
+                            </div>
+                            <div class="indicator_name">
+                                비타민D
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicator_detail">
+                        <div class="indicator_detail_concept_text">비타민D는 칼슘 흡수를 도와 뼈를 튼튼하게 만드는 역할로 잘 알려져 있습니다.<br /><br />하지만 최근에는 우리 몸의 면역력을 조절하고, 만성 염증을 줄이며, 기분에도 영향을 미치는 등 다양한 기능이 밝혀지고 있습니다.<br /><br />'햇빛 비타민'이라고도 불리지만, 실내 생활이 많은 현대인에게는 부족하기 쉬워 별도의 관심이 필요합니다.
+                        </div>
+                        <div class="indicator_detail_status_text">고객님의 비타민D 수치는 19.7ng/mL로, 정상 범위(30ng/mL 이상)에 미치지 못하는 '부족' 상태입니다.<br /><br />뼈 건강과 전반적인 컨디션 유지를 위해 햇볕을 쬐는 시간을 늘리거나, 필요시 영양제 섭취에 대해 전문의와 상담해 보시는 것을 권장합니다.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Indicator: 평균 심박수와 스트레스 -->
+                <div class="indicator">
+                    <div class="indicator_summary">
+                        <img src="../images/indicator/심장.png" />
+                        <div class="indicator_summary_content">
+                            <div class="indicator_status_warning
+                                alert
+                                
+                            ">
+                                <div class="indicator_status_warning_text">경계</div>
+                            </div>
+                            <div class="indicator_name">
+                                평균 심박수와 스트레스
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indicator_detail">
+                        <div class="indicator_detail_concept_text">평균 심박수는 심장이 1분 동안 얼마나 규칙적으로 뛰는지를, 스트레스 지수는 외부 자극에 대한 우리 몸의 긴장도를 나타냅니다.<br /><br />심장은 우리 몸의 엔진과 같아서, 안정된 상태에서 무리 없이 작동하는 것이 중요합니다.<br /><br />지속적인 스트레스는 심장을 불필요하게 빨리 뛰게 하여 과부하를 유발하고, 자율신경계의 균형을 깨뜨려 만성 피로와 심혈관 질환의 원인이 될 수 있습니다.
+                        </div>
+                        <div class="indicator_detail_status_text">고객님의 평균 심박수는 89.3회로 다소 빠른 편이며, 스트레스에 대한 저항도 또한 약간 떨어진 것으로 나타났습니다.<br /><br />이는 몸과 마음이 충분한 휴식을 취하지 못하고 있다는 신호일 수 있습니다.<br /><br />의식적인 휴식과 가벼운 운동을 통해 심장의 부담을 줄이고 스트레스를 관리하는 노력이 필요합니다.
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="lifestyle_list">
                 <div class="lifestyle_list_title_container">
@@ -175,32 +253,62 @@
                     </div>
                 </div>
                 <div class="lifestyle_container">
+                    
                     <div class="lifestyle">
-                        <img src="images/icon_lifestyle_drink.png" />
-                        <div class="lifestyle_name">음주습관</div>
+                        <img src="../images/lifestyle/식습관.png" />
+                        <div class="lifestyle_name">건강한 식단 관리</div>
                         <div class="lifestyle_detail">
-                            <div class="lifestyle_detail_reason">
-                                지방간, 위염, 뇌 위축 의심 소견 모두 음주와 직접적인 관련이 있습니다. <br/>
-                                간과 뇌의 건강을 위해 '절주'는 선택이 아닌 필수입니다.
+                            <div class="lifestyle_detail_reason">높아진 LDL 콜레스테롤, 총콜레스테롤, 식전혈당 수치는 포화지방, 트랜스지방, 정제 탄수화물의 과다 섭취와 밀접한 관련이 있습니다.<br /><br />현재의 식습관을 점검하고 개선하는 것이 시급합니다.
                             </div>
-                            <div class="lifestyle_detail_recommendation">
-                                술 자리는 되도록 피하시고, 마시더라도 1~2잔을 넘지 않도록 양을 의식적으로 조절하는 습관을 들여야 합니다.
+                            <div class="lifestyle_detail_recommendation">기름진 육류, 튀김, 과자, 단 음료 섭취를 줄이고, 대신 통곡물, 채소, 등푸른생선 섭취를 늘려보세요.<br /><br />혼자서 식단을 조절하기 어렵게 느껴지신다면, 강북삼성병원 영양상담실에서 개인 맞춤형 식단에 대한 전문적인 조언을 받으실 수 있습니다.
                             </div>
                         </div>
                     </div>
+                    
                     <div class="lifestyle">
-                        <img src="images/icon_lifestyle_food.png" />
-                        <div class="lifestyle_name">식습관</div>
+                        <img src="../images/lifestyle/운동.png" />
+                        <div class="lifestyle_name">규칙적인 운동 시작하기</div>
                         <div class="lifestyle_detail">
-                            <div class="lifestyle_detail_reason">
-                                고지혈증, 지방간, 역류성 식도염, 과체중의 주된 원인은 식습관에 있습니다.
+                            <div class="lifestyle_detail_reason">체질량지수(25.7)와 체지방률(31.4%)이 비만 단계에 있으며, 이는 혈당과 콜레스테롤 수치를 높이는 직접적인 원인입니다.<br /><br />운동은 체지방을 줄이고 혈당과 콜레스테롤을 개선하는 가장 효과적인 방법 중 하나입니다.
                             </div>
-                            <div class="lifestyle_detail_recommendation">
-                                기름진 튀김이나 고기, 당분이 많은 음료와 디저트를 줄여주세요.<br/> 대신 신선한 채소와 담백한 생선, 두부 섭취를 늘리고, 짜지 않게 먹는 습관이 혈관과 위를 편안하게 합니다.<br/>  
-                                특히 야식과 과식은 반드시 피해주시기 바랍니다.<br/> 
+                            <div class="lifestyle_detail_recommendation">먼저 걷기, 자전거 타기 등 즐겁게 할 수 있는 유산소 운동을 주 3~5회, 한 번에 30분 이상 꾸준히 시작해 보세요.<br /><br />점차 익숙해지면 근력 운동을 병행하여 기초대사량을 높이는 것이 좋습니다.<br /><br />강북삼성병원 건강증진센터의 운동 상담을 통해 안전하고 효과적인 운동 계획을 세우실 수 있습니다.
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="lifestyle">
+                        <img src="../images/lifestyle/음주.png" />
+                        <div class="lifestyle_name">절주 실천하기</div>
+                        <div class="lifestyle_detail">
+                            <div class="lifestyle_detail_reason">검진 문진 결과 '절주 필요' 항목이 확인되었습니다.<br /><br />잦은 음주는 중성지방 수치를 높이고 간에 부담을 줄 뿐만 아니라, 체중 증가와 혈당 조절을 어렵게 만드는 주요 원인입니다.
+                            </div>
+                            <div class="lifestyle_detail_recommendation">술자리의 횟수와 한 번에 마시는 주량을 의식적으로 줄이는 것부터 시작해 보세요.<br /><br />예를 들어, 주 2회 마시던 것을 1회로 줄이거나, 술 대신 물이나 탄산수를 마시는 습관을 들이는 것이 좋습니다.<br /><br />금주가 어렵다면 전문가의 도움이 필요할 수 있습니다.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle">
+                        <img src="../images/lifestyle/마음.png" />
+                        <div class="lifestyle_name">나만의 스트레스 해소법 찾기</div>
+                        <div class="lifestyle_detail">
+                            <div class="lifestyle_detail_reason">평균 심박수가 다소 빠르고 스트레스 저항도가 낮게 나타나, 만성적인 긴장 상태에 놓여있을 가능성이 있습니다.<br /><br />스트레스는 혈압과 혈당을 높이고 건강한 생활습관을 유지하기 어렵게 만듭니다.
+                            </div>
+                            <div class="lifestyle_detail_recommendation">하루 10분이라도 명상을 하거나, 가벼운 산책, 좋아하는 음악 감상 등 의식적인 휴식 시간을 가져보세요.<br /><br />몸의 긴장을 푸는 것만으로도 심장의 부담을 덜고 자율신경 균형을 되찾는 데 큰 도움이 됩니다.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lifestyle">
+                        <img src="../images/lifestyle/구강관리.png" />
+                        <div class="lifestyle_name">올바른 구강 관리</div>
+                        <div class="lifestyle_detail">
+                            <div class="lifestyle_detail_reason">검진 결과 '치아 통증'이 있고, '잠자기 전 칫솔질' 습관에 주의가 필요한 것으로 나타났습니다.<br /><br />구강 건강은 전신 건강과 연결되며, 특히 잇몸 염증은 혈관 건강에도 영향을 미칠 수 있습니다.
+                            </div>
+                            <div class="lifestyle_detail_recommendation">현재 느끼는 치아 통증에 대해서는 빠른 시일 내에 치과 진료를 받아보시는 것이 중요합니다.<br /><br />더불어 잠들기 전에는 반드시 칫솔질을 하고, 치실이나 치간칫솔을 함께 사용하여 음식물 찌꺼기와 세균막을 꼼꼼히 제거하는 습관을 들여주시기 바랍니다.
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -235,4 +343,4 @@
         </section>
     </div>
 </body>
-</html>
+</html>  
